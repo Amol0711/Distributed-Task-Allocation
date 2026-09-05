@@ -1,0 +1,84 @@
+{
+  "audit_type": "terminal-model-v1",
+  "episode_rows": 2880,
+  "fallback_invocations": 0,
+  "family": {
+    "ground_edge_count": 15,
+    "hereditary_assignment_count": 136,
+    "hereditary_cardinality_counts": {
+      "0": 1,
+      "1": 15,
+      "2": 60,
+      "3": 60
+    },
+    "terminal_assignment_count": 60,
+    "terminal_cardinality": 3,
+    "terminal_family_equals_maximal_family": true
+  },
+  "file_sha256": {
+    "episode_records.csv": "fd953e541ae54c428096ffbbfd6a71d32bcaf724ee93459418cc0a0394be7b16",
+    "trial_summary.csv": "6188e4a675d89c3f30c6df28a20f9313689ad29398d97951c420177cadfdb8df"
+  },
+  "fingerprints": {
+    "policy": "4ef980f72c051e887ac85783f350c7255cf73e7b287080b8075c4bae9c2c2622",
+    "primary_evidence": "81672022ca28a206e5128d8660a29db717d563f658e529e0ce4e473f118fb3d0",
+    "selection_zero_scale_optimum": "3aea33fe57fb2858bf797bc8a3d2b7749f4c1c3ff6d9b40e6d120cf40f14c55c"
+  },
+  "gates": {
+    "all_exact_optima_terminal": true,
+    "all_selected_assignments_terminal": true,
+    "all_zero_scale_assignments_terminal": true,
+    "analytical_saturation_bounds_close": true,
+    "contextual_and_fixed_factors_equal_one_third": true,
+    "episode_records_byte_locked": true,
+    "fallback_mode_and_reference_configured": true,
+    "global_extension_unit_curvature": true,
+    "hereditary_family_complete": true,
+    "policy_fingerprint_locked": true,
+    "primary_evidence_fingerprint_locked": true,
+    "saturation_inactive_on_hereditary_family": true,
+    "selection_fingerprint_locked": true,
+    "single_two_dimensional_physical_block": true,
+    "terminal_family_count_correct": true,
+    "terminal_family_exactly_maximal": true,
+    "trial_summary_byte_locked": true,
+    "zero_benefit_fallback_configured": true
+  },
+  "model_interface_version": "terminal-model-v1",
+  "physical": {
+    "controller_template_count": 4,
+    "fallback_included_in_uniform_reference_certificate": true,
+    "fallback_mode": 0,
+    "fallback_reference": [
+      0.0,
+      0.0
+    ],
+    "joint_mode_count_exercised": 4,
+    "joint_state_dimension": 2,
+    "per_agent_product_redesign_exercised": false,
+    "physical_blocks": 1,
+    "state_dimension_per_block": 2
+  },
+  "status": "PASS",
+  "structured_value": {
+    "analytical_feasible_raw_coordinate_upper_bound": 0.8400000000000001,
+    "analytical_ground_without_edge_coordinate_lower_bound": 1.68,
+    "basis": "coordinatewise_min_of_additive_load_and_one",
+    "contextual_greedy_factor": 0.3333333333333333,
+    "edge_feature_coordinate_lower_bound": 0.12,
+    "edge_feature_coordinate_upper_bound": 0.28,
+    "feasible_saturation_cap_margin": 0.15999999999999992,
+    "feature_saturation_cap": 1.0,
+    "fixed_greedy_factor": 0.3333333333333333,
+    "maximum_contextual_curvature": 1.0,
+    "maximum_feasible_marginal_residual": 0.0,
+    "maximum_feasible_raw_coordinate": 0.8400000000000001,
+    "maximum_feasible_saturation_residual": 0.0,
+    "maximum_ground_raw_coordinate": 4.05162276916821,
+    "minimum_contextual_curvature": 1.0,
+    "minimum_ground_raw_coordinate": 1.9499072026525104,
+    "minimum_ground_without_edge_raw_coordinate": 1.7926979366123499,
+    "minimum_singleton_value": 0.19287919304680923,
+    "q_extendibility": 2
+  }
+}

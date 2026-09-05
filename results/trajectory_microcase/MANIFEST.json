@@ -1,0 +1,12 @@
+{
+  "campaign_id": "TRAJ-MICRO-V1",
+  "files": {
+    "distributed_protocol_records.csv": "4c2a95a0e6610fc20a2a26ee6a36d0e3da594827e87387bca55e9ad48e56f0ae",
+    "distributed_reproducibility_audit.json": "8847cdbafb150cefdad0496ac9a2a73a6ccee34f96c977431cf6b69d0dabb242",
+    "episode_records.csv": "fd953e541ae54c428096ffbbfd6a71d32bcaf724ee93459418cc0a0394be7b16",
+    "feedback_flood_records.csv": "e2f5567f6a6a539981c62b47ee633ba474583532cce86bf9a0d6656ac578d628",
+    "model_closure_audit.json": "b1ce4ce4e2b7a9dc9a024bc1b6a206d357a75b07de1754ad6f4e8582195f82d5",
+    "summary.json": "51e8e20b2e68a71a42b05a46d203c1cede29dfea69fa7c589daa609af4e0ac99",
+    "trial_summary.csv": "6188e4a675d89c3f30c6df28a20f9313689ad29398d97951c420177cadfdb8df"
+  }
+}

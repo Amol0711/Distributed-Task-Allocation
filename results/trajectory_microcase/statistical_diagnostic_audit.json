@@ -1,0 +1,184 @@
+{
+  "audit_type": "statistical-diagnostics-v1",
+  "campaign_retention": {
+    "interpretation": "The paired statistic uses absolute cumulative true values. Reported value ratios use policy-conditioned exact-score-greedy denominators and cannot be divided to recover the paired statistic.",
+    "rows": [
+      {
+        "application": "Satellite coverage",
+        "campaign_id": "SAT-COV-V1",
+        "exact_score_greedy_denominator": "recomputed under each policy's own residual-resource state",
+        "exploitation_only_value_to_policy_conditioned_greedy_mean": 0.9927369025283828,
+        "paired_mean_minus_ratio_of_table_means": -0.000659032611449395,
+        "paired_retention_definition": "rho_s=V_shielded_s/V_exploitation_only_s",
+        "paired_retention_mean": 0.9980609799238207,
+        "paired_retention_sample_standard_deviation": 0.0069483678870590725,
+        "paired_retention_standard_error": 0.0012283095127795783,
+        "paired_trials": 32,
+        "ratio_of_table_means": 0.9987200125352701,
+        "shielded_value_to_policy_conditioned_greedy_mean": 0.9914662117373716,
+        "standard_error_definition": "sample_sd({rho_s})/sqrt(32)",
+        "table_ratio_recovers_paired_retention": 0
+      },
+      {
+        "application": "Aerial-vehicle allocation",
+        "campaign_id": "UAV-AG-V1",
+        "exact_score_greedy_denominator": "recomputed under each policy's own residual-resource state",
+        "exploitation_only_value_to_policy_conditioned_greedy_mean": 0.9920170086823743,
+        "paired_mean_minus_ratio_of_table_means": -0.0005900300578446371,
+        "paired_retention_definition": "rho_s=V_shielded_s/V_exploitation_only_s",
+        "paired_retention_mean": 0.9964346511072375,
+        "paired_retention_sample_standard_deviation": 0.008253310814266168,
+        "paired_retention_standard_error": 0.0014589930110019684,
+        "paired_trials": 32,
+        "ratio_of_table_means": 0.9970246811650821,
+        "shielded_value_to_policy_conditioned_greedy_mean": 0.9890654417918827,
+        "standard_error_definition": "sample_sd({rho_s})/sqrt(32)",
+        "table_ratio_recovers_paired_retention": 0
+      }
+    ]
+  },
+  "clip": {
+    "clip_episode_numbers": [
+      27,
+      30
+    ],
+    "clip_fraction": 0.009009009009009009,
+    "clip_inactive_fraction": 0.990990990990991,
+    "clipped_exploitation_episodes": 24,
+    "clips_per_seed": {
+      "12031": 2,
+      "12037": 2,
+      "12041": 2,
+      "12043": 2,
+      "12049": 2,
+      "12071": 2,
+      "12073": 2,
+      "12097": 2,
+      "12101": 2,
+      "12107": 2,
+      "12109": 2,
+      "12113": 2
+    },
+    "episode_ceiling": 0.6,
+    "exploitation_episodes": 2664,
+    "maximum_raw_episode_charge": 0.6075788941521933,
+    "maximum_raw_episode_utilization": 1.0126314902536557,
+    "total_clip_excess_over_all_exploitation_rows": 0.10498490110977399
+  },
+  "gates": {
+    "affordability_uses_policy_specific_resources": true,
+    "clip_count_is_24_of_2664": true,
+    "clip_occurs_only_at_episodes_27_and_30": true,
+    "clipped_rows_use_declared_cap": true,
+    "episode_cap_is_fmax_over_q": true,
+    "fixed_estimator_decision_difference_matches_locked_summary": true,
+    "locked_episode_records_unchanged": true,
+    "locked_trial_summary_unchanged": true,
+    "maximum_raw_charge_matches_locked_reconstruction": true,
+    "oracle_uses_policy_conditioned_base_family": true,
+    "paired_statistic_is_mean_of_absolute_value_ratios": true,
+    "physical_share_mean_matches_reconstruction": true,
+    "physical_share_range_matches_reconstruction": true,
+    "policy_specific_oracle_is_accumulated": true,
+    "reported_uncertainty_is_standard_error": true,
+    "table_ratios_do_not_algebraically_recover_paired_retention": true,
+    "tracking_maximizer_is_episode_one_all_seeds": true,
+    "tracking_maximum_is_initial_condition_ratio": true,
+    "tracking_maximum_matches_locked_reconstruction": true,
+    "two_clips_per_seed": true,
+    "witness_common_first_stage": true,
+    "witness_configured_scale_winner": true,
+    "witness_crossing_inside_certified_scale_interval": true,
+    "witness_crossing_matches_reconstruction": true,
+    "witness_line_A_matches_reconstruction": true,
+    "witness_line_B_matches_reconstruction": true,
+    "witness_pair_is_top_envelope_at_crossing": true,
+    "witness_zero_scale_winner": true,
+    "zero_scale_beta_equals_sqrt_lambda_Btheta": true
+  },
+  "locked_evidence": {
+    "episode_records_sha256": "fd953e541ae54c428096ffbbfd6a71d32bcaf724ee93459418cc0a0394be7b16",
+    "trial_summary_sha256": "6188e4a675d89c3f30c6df28a20f9313689ad29398d97951c420177cadfdb8df"
+  },
+  "physical_confidence_share": {
+    "beta_zero_scale": 0.275,
+    "counterfactual_performance_claimed": false,
+    "definition": "(beta_k-beta_k^(0))/beta_k on exploitation episodes",
+    "fixed_estimator_matching_difference_mean": 0.5274024024024023,
+    "fixed_estimator_matching_difference_se": 0.005004294016294119,
+    "maximum": 0.4993717677642393,
+    "mean_of_seed_means": 0.47775452583112,
+    "mean_over_exploitation_episodes": 0.47775452583112,
+    "minimum": 0.4223708948099473,
+    "sqrt_lambda_Btheta": 0.275,
+    "standard_error_of_seed_means": 4.9462517528044747e-05
+  },
+  "score_crossing_witness": {
+    "beta_configured": 0.47934764903808336,
+    "beta_zero_scale": 0.275,
+    "candidate_A": {
+      "configured_scale": 0.0548271522404341,
+      "crossing_scale": 0.047525170715918545,
+      "edge_one_based": "(3,1)",
+      "edge_zero_based": "2-0",
+      "metric_width": 0.22100626010580277,
+      "physical_scale_slope": 0.8237179541492518,
+      "posterior_mean": 0.24443389102692178,
+      "score_at_configured_scale": 0.35037272223133753,
+      "score_at_crossing": 0.3443579489487279,
+      "score_at_zero_scale": 0.30521061255601756,
+      "zero_scale_intercept": 0.30521061255601756
+    },
+    "candidate_B": {
+      "configured_scale": 0.0548271522404341,
+      "crossing_scale": 0.047525170715918545,
+      "edge_one_based": "(1,3)",
+      "edge_zero_based": "0-2",
+      "metric_width": 0.11174829628769176,
+      "physical_scale_slope": 0.41649986726029864,
+      "posterior_mean": 0.2938329401749096,
+      "score_at_configured_scale": 0.3473992232844258,
+      "score_at_crossing": 0.3443579489487279,
+      "score_at_zero_scale": 0.3245637216540248,
+      "zero_scale_intercept": 0.3245637216540248
+    },
+    "common_partial_set_one_based": "{(2,2)}",
+    "common_partial_set_zero_based": "1-1",
+    "confidence_log_factor_Gamma_k": 3.727124986210398,
+    "configured_physical_scale": 0.0548271522404341,
+    "configured_scale_winner_one_based": "(3,1)",
+    "configured_scale_winner_zero_based": "2-0",
+    "counterfactual_performance_claimed": false,
+    "crossing_physical_scale": 0.047525170715918545,
+    "episode": 21,
+    "seed": 12031,
+    "stage": 2,
+    "top_candidates_at_crossing_zero_based": [
+      "0-2",
+      "2-0"
+    ],
+    "zero_scale_winner_one_based": "(1,3)",
+    "zero_scale_winner_zero_based": "0-2"
+  },
+  "source_sha256": {
+    "campaign_source": "7c97b47c5b1bb137706b1d7105ca4393a5b7ed861561fe3d7488996dc52801d9",
+    "configuration": "d24abc70f46a7be193b11306f938d9df0ead7773bf9732f6f95fff55aa6fd89f",
+    "evaluation_summary": "b65bc11a08971b2699c6f65c348d4cf4d8d2072a30b9e2f367d829ea6b91e68b",
+    "paired_retention": "2720cf8f055e7b80718656268f09a86a0a69dd95697f8f68e830c3c0e7e1a953",
+    "trajectory_source": "26b0847c5e86a1209475959a95f0d48f9b13c1634ea09c6d6c37e63f69e4e3aa"
+  },
+  "status": "PASS",
+  "tracking_tightness": {
+    "absolute_radius_margin": 0.002078237816709988,
+    "all_sequence_radius": 0.07707823781670999,
+    "initial_error_norm": 0.075,
+    "interpretation": "deterministic tube tightness under the pathwise disturbance bound, not a failure probability",
+    "maximizer_episode_numbers": [
+      1
+    ],
+    "maximizer_is_predeclared_initial_condition": true,
+    "maximizer_rows": 12,
+    "maximum_tracking_utilization": 0.9730372946297503,
+    "relative_margin": 0.026962705370249695
+  }
+}

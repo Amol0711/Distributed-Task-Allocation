@@ -1,0 +1,176 @@
+{
+  "audit_type": "distributed-protocol-v1",
+  "counts": {
+    "configured_scale_traces": 2664,
+    "consensus_round_instances": 42624,
+    "directed_proposal_transmissions": 170496,
+    "directed_return_transmissions": 23040,
+    "episode_rows": 2880,
+    "evaluation_seeds": 12,
+    "exploitation_episodes": 2664,
+    "exploitation_stage_records": 21312,
+    "exploitation_traces": 5328,
+    "exploration_dispatch_records": 216,
+    "feedback_floods": 2880,
+    "feedback_round_instances": 5760,
+    "zero_scale_traces": 2664
+  },
+  "encoding": {
+    "declared_error": 0.0,
+    "maximum_observed_residual": 0.0,
+    "required_message_tags": [
+      "episode",
+      "stage",
+      "partial_set",
+      "score_scale"
+    ],
+    "scheme": "identity"
+  },
+  "exploration": {
+    "codebook_family": "lexicographic_terminal_matchings",
+    "codebook_fingerprint": "a7af7a02b6748bf7b7c7386cfe739f1860e88b9ff2379cdd6b5b38c958455d68",
+    "codebook_size": 60,
+    "dispatch_mode": "common_public_terminal_assignment",
+    "schedule_fingerprint": "1a1dc74413c56949a1aef2f1b15e661abe123981e56e9d8dc016971d4359bad7",
+    "schedule_indices_one_based": [
+      4,
+      11,
+      18,
+      25,
+      32,
+      39,
+      46,
+      53,
+      60,
+      7,
+      14,
+      21,
+      28,
+      35,
+      42,
+      49,
+      56,
+      3
+    ],
+    "schedule_indices_zero_based": [
+      3,
+      10,
+      17,
+      24,
+      31,
+      38,
+      45,
+      52,
+      59,
+      6,
+      13,
+      20,
+      27,
+      34,
+      41,
+      48,
+      55,
+      2
+    ],
+    "schedule_multiplier": 7,
+    "schedule_offset": 3
+  },
+  "file_sha256": {
+    "distributed_protocol_records.csv": "4c2a95a0e6610fc20a2a26ee6a36d0e3da594827e87387bca55e9ad48e56f0ae",
+    "episode_records.csv": "fd953e541ae54c428096ffbbfd6a71d32bcaf724ee93459418cc0a0394be7b16",
+    "feedback_flood_records.csv": "e2f5567f6a6a539981c62b47ee633ba474583532cce86bf9a0d6656ac578d628",
+    "trial_summary.csv": "6188e4a675d89c3f30c6df28a20f9313689ad29398d97951c420177cadfdb8df"
+  },
+  "fingerprints": {
+    "exploration_codebook": "a7af7a02b6748bf7b7c7386cfe739f1860e88b9ff2379cdd6b5b38c958455d68",
+    "exploration_schedule": "1a1dc74413c56949a1aef2f1b15e661abe123981e56e9d8dc016971d4359bad7",
+    "policy": "4ef980f72c051e887ac85783f350c7255cf73e7b287080b8075c4bae9c2c2622",
+    "primary_evidence": "81672022ca28a206e5128d8660a29db717d563f658e529e0ce4e473f118fb3d0",
+    "selection_zero_scale_optimum": "3aea33fe57fb2858bf797bc8a3d2b7749f4c1c3ff6d9b40e6d120cf40f14c55c"
+  },
+  "gates": {
+    "all_agents_agree_and_all_tags_valid": true,
+    "centralized_distributed_matching_equality_all_traces": true,
+    "centralized_distributed_stage_sequence_equality_all_traces": true,
+    "configured_trace_count_and_keys_exact": true,
+    "consensus_accounting_exact": true,
+    "episode_records_byte_locked": true,
+    "exploration_dispatch_count_and_keys_exact": true,
+    "exploration_dispatch_matches_public_schedule": true,
+    "feedback_accounting_exact": true,
+    "feedback_count_and_keys_exact": true,
+    "feedback_flood_exact_all_episodes": true,
+    "identity_encoder_zero_error": true,
+    "path_graph_exact": true,
+    "policy_fingerprint_locked": true,
+    "primary_evidence_fingerprint_locked": true,
+    "protocol_branch_set_exact": true,
+    "protocol_outputs_match_locked_policy_columns": true,
+    "protocol_record_count_exact": true,
+    "public_codebook_complete_terminal_family": true,
+    "public_schedule_fixed": true,
+    "required_message_tags_declared": true,
+    "resource_screen_nonbinding_all_records": true,
+    "selection_fingerprint_locked": true,
+    "three_acceptances_and_null_stage_all_traces": true,
+    "trial_summary_byte_locked": true,
+    "unique_owner_partition_exact": true,
+    "zero_scale_trace_count_and_keys_exact": true
+  },
+  "network": {
+    "diameter": 2,
+    "diameter_upper_bound": 2,
+    "directed_edges_per_round": 4,
+    "feedback_source_agent": 0,
+    "neighbors": {
+      "0": [
+        1
+      ],
+      "1": [
+        0,
+        2
+      ],
+      "2": [
+        1
+      ]
+    },
+    "nodes": 3,
+    "rounds_per_stage": 2,
+    "undirected_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  },
+  "ownership": {
+    "candidate_count_by_owner": {
+      "0": 5,
+      "1": 5,
+      "2": 5
+    },
+    "identifier_order": "owner_major_task_minor",
+    "rule": "edge_owned_by_first_coordinate"
+  },
+  "protocol_interface_version": "distributed-protocol-v1",
+  "resource_screen": {
+    "consumable_resource_channel_activated": false,
+    "mode": "vacuous_owner_supported_zero_cost",
+    "nonbinding_records": 5544,
+    "protocol_records": 5544,
+    "retained_edges_each_episode": 15,
+    "robust_edge_cost": 0.0
+  },
+  "static_certificate_excerpt": {
+    "allocation_network_diameter": 2,
+    "consensus_rounds_per_stage": 2,
+    "encoding_error": 0.0,
+    "exploration_codebook_size": 60,
+    "resource_screen_retained_edge_count": 15
+  },
+  "status": "PASS"
+}
