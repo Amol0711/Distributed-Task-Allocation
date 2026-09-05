@@ -1,0 +1,5 @@
+# Numerical environment used for reference reproduction.
+# Python 3.13.5
+numpy==2.3.5
+scipy==1.17.0
+pytest==9.0.2

@@ -1,0 +1,916 @@
+{
+  "file_count": 173,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "b5fec924e1cfbbdea4ed2ca5a746c802d3118d2e53cc9fcc0fcddebcea83826a",
+      "size_bytes": 369
+    },
+    {
+      "path": ".github/workflows/validation.yml",
+      "sha256": "34504d2d08ade2c4ee9e641f0758b172b69c33cb1504d5ee20783a100ec94e83",
+      "size_bytes": 475
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "176acf0935161299107f69391721ea6594d5288bccf0ace731d417c0e4f48b87",
+      "size_bytes": 236
+    },
+    {
+      "path": "LICENSE_NOTICE.txt",
+      "sha256": "36ebee32f91089003ad7e298c5fe33ffddcd5a49d8ce2cafa4af33093d210bfc",
+      "size_bytes": 208
+    },
+    {
+      "path": "README.md",
+      "sha256": "4ef43c6377a3657e8711058d8b4313d6593bdda101c96e0f2713531620e4741b",
+      "size_bytes": 10862
+    },
+    {
+      "path": "VERSION",
+      "sha256": "c28fcca53637bc88e124af1725df13cb98c69dedefd62fb3cdbe1cdb6b760624",
+      "size_bytes": 6
+    },
+    {
+      "path": "configs/exploration.json",
+      "sha256": "eaec880f5394aefaa1386ef0964efab839fb0c619153747cbecaa37d88dc415a",
+      "size_bytes": 1509
+    },
+    {
+      "path": "configs/reference_reset_library.json",
+      "sha256": "6b6eb4c96e9517f9192756a77ac6510a64340e5ce6e52a1310bee501f9e4724c",
+      "size_bytes": 1528
+    },
+    {
+      "path": "configs/return_model_scope.json",
+      "sha256": "5319ef56d9a736a4e263245ab2848dedcb7b23ff32024bd2529675c436a8dc02",
+      "size_bytes": 1086
+    },
+    {
+      "path": "configs/satellite_campaign.json",
+      "sha256": "4437ee8847efe54a8f6e38d8bfc8c148dabd124db50f5aa04d5740b47105ee28",
+      "size_bytes": 2580
+    },
+    {
+      "path": "configs/satellite_tracking_model.json",
+      "sha256": "b21b1a85ba599b167b6b1794174cc98ce94c4ed8dc7c0813225abc08287c7135",
+      "size_bytes": 1910
+    },
+    {
+      "path": "configs/trajectory_microcase.json",
+      "sha256": "d24abc70f46a7be193b11306f938d9df0ead7773bf9732f6f95fff55aa6fd89f",
+      "size_bytes": 2252
+    },
+    {
+      "path": "configs/uav_campaign.json",
+      "sha256": "26b7eb119607235ee62e42f9869786d4d9142966fc5b156bb7a241ac48518e13",
+      "size_bytes": 2641
+    },
+    {
+      "path": "configs/uav_tracking_model.json",
+      "sha256": "b88a3c54b9916959c1dfbc4ecfdc5edce855b8e8bea4379338f7da6113c51f12",
+      "size_bytes": 1934
+    },
+    {
+      "path": "datasets/README.md",
+      "sha256": "ddd00d7c8b400202a53f1e5c7c14e4caf0a26952882a661510d8082682decab1",
+      "size_bytes": 522
+    },
+    {
+      "path": "datasets/SAT-COV-V1/primary_environment_stream.csv",
+      "rows": 11520,
+      "sha256": "bca4a97db6efba01b58b2003f84618bdd218d87c34166b59e612a18a8918725d",
+      "size_bytes": 505887
+    },
+    {
+      "path": "datasets/SAT-COV-V1/satellites.csv",
+      "rows": 8,
+      "sha256": "fd385e7d0550aceb098f8c7749e0c3567ee3fd16143a8c8ba8d68dca025ccdba",
+      "size_bytes": 817
+    },
+    {
+      "path": "datasets/SAT-COV-V1/sensor_product_quality.csv",
+      "rows": 48,
+      "sha256": "6decef718a12976f270384747167b5e0896704b9a9eaba094e639c1abdd82a92",
+      "size_bytes": 1136
+    },
+    {
+      "path": "datasets/SAT-COV-V1/targets.csv",
+      "rows": 24,
+      "sha256": "0bb61e817386554a78f2a4471de6711622ba8bf00b2bc02ffb4f955970d729ba",
+      "size_bytes": 4223
+    },
+    {
+      "path": "datasets/UAV-AG-V1/field_cells.csv",
+      "rows": 48,
+      "sha256": "bca053a9d5edad7d540b277c5f412c6766d1c2ababfd07004c5c28e7a81b095f",
+      "size_bytes": 9203
+    },
+    {
+      "path": "datasets/UAV-AG-V1/primary_environment_stream.csv",
+      "rows": 500,
+      "sha256": "6dc37b279a06f9398cca0f3ce459de3783a6696cba11eae9dc6ccc2caa656d18",
+      "size_bytes": 30853
+    },
+    {
+      "path": "datasets/UAV-AG-V1/uavs.csv",
+      "rows": 10,
+      "sha256": "cdb3649870f4d3a2f1ef88a17a539f1e51843d8d8854ba861094edd153335ad2",
+      "size_bytes": 605
+    },
+    {
+      "path": "environment.yml",
+      "sha256": "844b6315d7cb5cd66ec3293e75d75bfe2ba7b2d692eef533e2685a82eb700cfb",
+      "size_bytes": 142
+    },
+    {
+      "path": "requirements-lock.txt",
+      "sha256": "1341e6994bc9bf527a35dea47946225cb7ddc6bb70efe6f0fefe8ba89d46fa51",
+      "size_bytes": 114
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "a84881fca06bfb66f10d45e476980117d2ac838f346b032aac3f549a0a472c4a",
+      "size_bytes": 44
+    },
+    {
+      "path": "results/reference/MANIFEST.json",
+      "sha256": "bc30d0c1ac92b4ecebf1120f97c131dfa6eee0a51ead934287f091e1d8eceeb8",
+      "size_bytes": 18885
+    },
+    {
+      "path": "results/reference/README.md",
+      "sha256": "4f08af5aa7373ece33c6f19de7d4afb8396cd010337a083c0bf7161a1d61f8b2",
+      "size_bytes": 652
+    },
+    {
+      "path": "results/reference/application_evaluation/README.md",
+      "sha256": "f2f7d61c867a57401c3b8be5cb54b8e4cf8ff408c4790ec981292b4743bf6405",
+      "size_bytes": 420
+    },
+    {
+      "path": "results/reference/application_evaluation/covariance_nonactivation.csv",
+      "rows": 2,
+      "sha256": "6f60a73a728ceb227c00bf188080947046ecfd9ce85f1195c20f707e872f7713",
+      "size_bytes": 951
+    },
+    {
+      "path": "results/reference/application_evaluation/curvature_descriptive_summary.csv",
+      "rows": 2,
+      "sha256": "844dc94863d8bea9a1e7f4b33a2086fe6d1fff58fa214052c8c6881400998d1d",
+      "size_bytes": 411
+    },
+    {
+      "path": "results/reference/application_evaluation/evaluation_certificate_summary.csv",
+      "rows": 4,
+      "sha256": "b65bc11a08971b2699c6f65c348d4cf4d8d2072a30b9e2f367d829ea6b91e68b",
+      "size_bytes": 5717
+    },
+    {
+      "path": "results/reference/application_evaluation/paired_bootstrap_reconciliation.csv",
+      "rows": 2,
+      "sha256": "5e5562acf53f0578314c2e16cc6cf61473d3b15b870543af28bbcf849dd723ce",
+      "size_bytes": 688
+    },
+    {
+      "path": "results/reference/application_evaluation/paired_retention.csv",
+      "rows": 2,
+      "sha256": "2720cf8f055e7b80718656268f09a86a0a69dd95697f8f68e830c3c0e7e1a953",
+      "size_bytes": 216
+    },
+    {
+      "path": "results/reference/application_evaluation/selection_performance_invariance.csv",
+      "rows": 24,
+      "sha256": "b690979a2b6ca6f9f3edc38c2e0883f168f3011984b11dc902bc4e259393724c",
+      "size_bytes": 2032
+    },
+    {
+      "path": "results/reference/campaign_performance.csv",
+      "rows": 6,
+      "sha256": "782c9bc6af40cc02fd5d2959bbcb746da6e59794322037881d5f8a22bd70b413",
+      "size_bytes": 1035
+    },
+    {
+      "path": "results/reference/control_certificates/CONTROL_EVIDENCE_MANIFEST.json",
+      "sha256": "36b8eeb10ffed80a66a2ba46a67f1dcc5d79cbd99628fd5be8ad615bf6fb79fd",
+      "size_bytes": 2973
+    },
+    {
+      "path": "results/reference/control_certificates/controller_mode_checks.csv",
+      "rows": 8,
+      "sha256": "b8e1bde0813e1b8883a2e9ba1ce4470641024514c1ef5df6858a6a3b4736f3a2",
+      "size_bytes": 3837
+    },
+    {
+      "path": "results/reference/control_certificates/controller_pair_checks.csv",
+      "rows": 32,
+      "sha256": "b0d4d1bc47e450186753ed8262d18499471e777459dae2968d6cbc198a0260b8",
+      "size_bytes": 4699
+    },
+    {
+      "path": "results/reference/control_certificates/controller_template_summary.csv",
+      "rows": 2,
+      "sha256": "1e9ecbc07386f06f07d57269579be63d61e4340b2334d43ba179440163855929",
+      "size_bytes": 1525
+    },
+    {
+      "path": "results/reference/control_certificates/reference_reset_offsets.csv",
+      "rows": 8,
+      "sha256": "c9b203cdda7bc3203891c72029a015a056e35537d525955d318ad6b4c782d507",
+      "size_bytes": 703
+    },
+    {
+      "path": "results/reference/control_certificates/reference_reset_pairs.csv",
+      "rows": 32,
+      "sha256": "27817633ece8074d717304824524df528ea0b4e3e3875f9b1a9fcdd9efa9ff07",
+      "size_bytes": 3793
+    },
+    {
+      "path": "results/reference/control_certificates/reference_reset_summary.csv",
+      "rows": 2,
+      "sha256": "acb68c0b124c782d95e035fef06886bf068fd7e117fe0f4ea0541f7654b8fb0b",
+      "size_bytes": 749
+    },
+    {
+      "path": "results/reference/coordination_diagnostic.csv",
+      "rows": 6,
+      "sha256": "2d7796fac0bdb8469ca955033917df760fed493615fd3a840c51c79ed95fd83d",
+      "size_bytes": 400
+    },
+    {
+      "path": "results/reference/covariance_diagnostic.csv",
+      "rows": 2,
+      "sha256": "6cdf70f307d44062c5e94d95ed513f8426619ffe439e7fde4254eb24c532f3cb",
+      "size_bytes": 1049
+    },
+    {
+      "path": "results/reference/covariance_summary.csv",
+      "rows": 2,
+      "sha256": "69d66c326707f37789461966bfcd7c0831765319ef6695787cf45448deb9f5a6",
+      "size_bytes": 455
+    },
+    {
+      "path": "results/reference/exact_oracle/exact_oracle_audit.json",
+      "sha256": "05ec46d4f7bd8bcff6d2487650e1a8d465f582a3c1f249442b9f6c783ea56b02",
+      "size_bytes": 2442
+    },
+    {
+      "path": "results/reference/exact_oracle/exact_oracle_instances.csv",
+      "rows": 320,
+      "sha256": "9ce3b9d40fd4514c5fc5eeaeb6c605455ca66d70c38fccddf3c38541b3f6f53e",
+      "size_bytes": 73513
+    },
+    {
+      "path": "results/reference/exploration_tradeoff.csv",
+      "rows": 3,
+      "sha256": "7b60349670a405896957bd82ea460bcb14c323261d2fb6d0989c170b9eb6ebf7",
+      "size_bytes": 318
+    },
+    {
+      "path": "results/reference/learning_configuration.csv",
+      "rows": 2,
+      "sha256": "c53bb49e66555e4c984d7f3243b2b222d6406ded429bfaa1dfe2a4df03d1ae26",
+      "size_bytes": 347
+    },
+    {
+      "path": "results/reference/paired_diagnostics/README.md",
+      "sha256": "48bca3d5dbabc15c722f80caa211b6a957080261f2b5a92533dca4377ebb4d3a",
+      "size_bytes": 548
+    },
+    {
+      "path": "results/reference/paired_diagnostics/paired_retention_reconciliation.csv",
+      "rows": 2,
+      "sha256": "1f4ca5e22814051fd7c19cd227e414cc32e373303513a967efe11eee854aa60c",
+      "size_bytes": 1049
+    },
+    {
+      "path": "results/reference/physical_configuration.csv",
+      "rows": 2,
+      "sha256": "3c347765eeba9a552dbf4d6fbc7605f989ad40949c080eb0d8cc6df005bc903f",
+      "size_bytes": 199
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_constraint_audit.csv",
+      "rows": 64,
+      "sha256": "55c1d4c6b339d109d2bb4569bf687704c25161043a4e026709b76aff71ef9375",
+      "size_bytes": 13053
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_constraint_audit.json",
+      "sha256": "3904b866853ea3000f990c162a4c8e507cfec14b029b037d0fc87f03922878d1",
+      "size_bytes": 47186
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T01.json",
+      "sha256": "ab1248eb885d83de33e493d0ebe7186d17085a8b0c906af1577207a3e143d3ac",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T02.json",
+      "sha256": "30a19b3633c9066aba045b798cbea878ff7382139bea94b37e5b3070903a0fa3",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T03.json",
+      "sha256": "25100f05a0d63eff8af139658e0ecbe6075f626e40a2d1ea70dfa4eb0826a7f8",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T04.json",
+      "sha256": "03615b2e812a456a5ec60333f031712e8b385a738ffc0bf5525c18df27d6f8ac",
+      "size_bytes": 627
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T05.json",
+      "sha256": "dcaf96838eeb22f30261bc6aee5051637e92be536ce906e3808dc95abd913fa6",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T06.json",
+      "sha256": "01044af0d478bebc5ebf120bdc69621e36759319b83d42b2f38d3435bd785cb4",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T07.json",
+      "sha256": "9be10ddbd85ce79ba00409d61b1c210a7e4dd84f688e78595e970ebcaf9e9da6",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T08.json",
+      "sha256": "15b2fb7a963347ac8f0426b6c95f8c408f9e86a2df5a3c59cb38ff2308d4559a",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T09.json",
+      "sha256": "78099db003c283e181d2b9030b0932edbd1ada138576fab031403d21ad16820c",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T10.json",
+      "sha256": "e13e68960ae9bfb4ad0a400e7c758d9d41f4b5a2a079a053dda6d32d761f4d97",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T11.json",
+      "sha256": "3db32c68b33f1bd732ea30674402a6a4aee067162caefb6d4258a1198ac5dbeb",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T12.json",
+      "sha256": "6bb3239530ff2c6dd25ba1d066d8d58792731f31fac6921b1c2d877a966b5310",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T13.json",
+      "sha256": "5f4dd9a9026351df65dabc4256e2f5eb01c5256a4ac4b62d8a93079209de3584",
+      "size_bytes": 627
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T14.json",
+      "sha256": "ea1bbfda78257aa072cbac06125b7429b775dea11dd90869969da8ed4a35fb7f",
+      "size_bytes": 627
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T15.json",
+      "sha256": "4f407497f3e04ab1ae1750d0e6a607e8dbb79d2639f0a4a448f3bad0085e0a74",
+      "size_bytes": 627
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T16.json",
+      "sha256": "522cc0a4949653d9d726525651b07f85c05bd120e33eb6ca81bd5c722c7ee908",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T17.json",
+      "sha256": "bb40b06366a9c17ffab917ef53f1474baf9fec96b7495415bf76c9c54209704b",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T18.json",
+      "sha256": "cbf8fa7e17e234a846351f8bb7fc4e7779b951ded0544ec6ee9a96313d6058f9",
+      "size_bytes": 628
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T19.json",
+      "sha256": "b34f60f87f8a717c70316bee425d974546408d64db06f513832452e98701ac19",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T20.json",
+      "sha256": "82b612b5f89e897cc486d640b9eb6fc65dbad48a0ef2e990fbff6dabd69e1677",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T21.json",
+      "sha256": "a93c5eebccc90ff09236c6f3f745d8a0c6b69a9d67070eadbf2cbbca28eac320",
+      "size_bytes": 627
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T22.json",
+      "sha256": "fad69151c282c4c9de42179f58ff9d9faf2f23f31a1b00afb67955977eda9e55",
+      "size_bytes": 628
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T23.json",
+      "sha256": "0549816f36151ef809601ec14789e6031d7361551f2267ba187b388c134139e2",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T24.json",
+      "sha256": "46e7df24575a16ddcecce931bfca12c382dcf3b134fbbc99f2e479223f382dab",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T25.json",
+      "sha256": "8598eb2bee881671028285c38b6077fe39df1a84a9ef00ca00b4a5b1b8cea4b5",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T26.json",
+      "sha256": "60a4b662af7216279ab850af57c35447af821687ba37949828acaffbe3a7b5b6",
+      "size_bytes": 627
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T27.json",
+      "sha256": "07e1e959038d70cfd91c4b7c69076735fdc0ee01a4243eca11e33bf8d51021cf",
+      "size_bytes": 627
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T28.json",
+      "sha256": "23518501625eacf9a760fe99b89f62b3fcf9a89f2f5ce7b3e4413268bc348a5a",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T29.json",
+      "sha256": "0e16bd6fd8da8bdea8b8e328841a23c0ee5dba8f3ffbb7fd59431a8e60fa4ed6",
+      "size_bytes": 627
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T30.json",
+      "sha256": "0d7742475b5f401658ca6d964c5f503872788b2f51dcaebde21a5fb71e906c03",
+      "size_bytes": 628
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T31.json",
+      "sha256": "a227dd5cffe0528adafd1224ab22da30b234d4f04259188b3d3951815dc2e659",
+      "size_bytes": 623
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/SAT-COV-V1_T32.json",
+      "sha256": "7215c3b76c7ce574178cb44b94d63d47d13d8f5337eb86f2a05a571586045bd9",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T01.json",
+      "sha256": "025a2448e5ca3ba5aa00786c444d1ade5e1ba08bd5552e7a0711dfa8fb1a5a4c",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T02.json",
+      "sha256": "f94705b3d8963aee40776393145f68dd4b61b0b583d79cf847a250c9fffc6152",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T03.json",
+      "sha256": "abaf0860e9771c577fbc2f644461a63567a8d05a2868d5e7719f511a8c26fe2e",
+      "size_bytes": 622
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T04.json",
+      "sha256": "cd98eacae6dbfc2cfdb45371bbf5265b8afe5063016f9b92280718a3b8bf28e7",
+      "size_bytes": 622
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T05.json",
+      "sha256": "c739d1e6d890e5a2bc83d617b7531e2ed90f75311746f7cd8ff032edb3c40955",
+      "size_bytes": 623
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T06.json",
+      "sha256": "9c48ffe5b3421c84d5f863f69c5f916fce98006387447a052bc7dcbf15b002d1",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T07.json",
+      "sha256": "6a42062f8bd6ac30ad592c4980e0645fa254278f6e1960b9f1fb3a7922ba55f8",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T08.json",
+      "sha256": "c28c46178afa47870396733c53528596da18c7343f2ce6a6d1b2679da7463761",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T09.json",
+      "sha256": "e4107445021c94f0c8b471e4844769ee022fab31eeef6604c159ffb0ee244df7",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T10.json",
+      "sha256": "219f868795e6db3fa69e4e5c2e9c4f3bf46914ed6b5aa4737a334340cb556891",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T11.json",
+      "sha256": "aa29021af5abb3f526f7b87a014a1b6ae7ac1baa8382cedd0f00587eb0e3dbbe",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T12.json",
+      "sha256": "5a59cbfc2276cd8b50956afbb64c4fdac9d533680a024b41c6129eb7128913d8",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T13.json",
+      "sha256": "5dfc5f0715df72d3c230044c61d854261376b2eac3d6cb66436c14c5489b03a8",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T14.json",
+      "sha256": "e15bdee8e0aa1a1d6a16e016a30edac6cfc682a52faee8ce8e3abfb198925210",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T15.json",
+      "sha256": "d0f4e16fdb00b5537854b8801c44a515277b469aeefb5690d743f26615418943",
+      "size_bytes": 623
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T16.json",
+      "sha256": "bbf7e25113f221ee51c2b165259bcb145751773c6331d274cc7a993a7426cde5",
+      "size_bytes": 623
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T17.json",
+      "sha256": "6eb8c3d4de2a28cb6122bc9298d99e5f17d8f88b6bdf55225de81d927df4be24",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T18.json",
+      "sha256": "404ce302c880d3d648d8abfae684132cf9999f94842617c9020e3a097cc8991a",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T19.json",
+      "sha256": "61cb868348b74e5c23d803e6602cbb8716e4b68e47f3be0a3960a2e502908747",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T20.json",
+      "sha256": "eae447171b0146c138e210417ad470cf7dc8ecf3864c5bd3cfbd776e5c30650b",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T21.json",
+      "sha256": "14a106cb132048bee585a1cf9453f10b7d26957d36d6b0bdc20973be420f2bf7",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T22.json",
+      "sha256": "3db19c320362e376aadca1d8f52260639213dd0400b34c67b17fe1f82766f64d",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T23.json",
+      "sha256": "c08762a0c3b608a2628d81e1a17e6d44c6c9a9a0d31e7f2c3205fa5762e9288d",
+      "size_bytes": 623
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T24.json",
+      "sha256": "f5b85a1fca97ab0f552d07d8af1f71c436fae6cf55ade2fbbe84d4dcc25fa151",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T25.json",
+      "sha256": "3a52146a90b52712b3c8d730946cdbb6dcd4abeb7070c8a46c5c519cd03f0c7b",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T26.json",
+      "sha256": "a36977e253be2258002195b62154c39da5d7d3168289c49d1260d2159f2416b4",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T27.json",
+      "sha256": "23cdba88d9ece2c8d6a2fe4edeef3acf412f67d2462ba3fc3760887ad0600028",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T28.json",
+      "sha256": "2c5ef3a8376703dc3c56b6d127d423a017efb2358a687f7ef1ec62eacadeeee5",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T29.json",
+      "sha256": "e149aee4398faa78ef81d744bd57352111bb657875eedab39b207af855ed6eb3",
+      "size_bytes": 626
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T30.json",
+      "sha256": "7528506bbf9d4a523e8b0073361c73eddc8615b0899e3c46bda5778c6240eb17",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T31.json",
+      "sha256": "27cb4f62c932fb39849e54c89e086cb31fb26b1803e629f936693636cb1b8268",
+      "size_bytes": 624
+    },
+    {
+      "path": "results/reference/projected_estimator/projected_estimator_trials/UAV-AG-V1_T32.json",
+      "sha256": "e4adbc78be0f96c0b42990c8f7a100b0a85cd258023be8cf6ced35a6e34ce5be",
+      "size_bytes": 625
+    },
+    {
+      "path": "results/reference/selection_fingerprints.csv",
+      "rows": 48,
+      "sha256": "fc95dd49175eb6c8358e675859bd3b0d0110495ffd765ad20ea2c61f97f2080c",
+      "size_bytes": 5124
+    },
+    {
+      "path": "results/trajectory_microcase/MANIFEST.json",
+      "sha256": "27275328bdeb6b8579647016e928615fe81978d2c7677710c3d3af53c944e5b8",
+      "size_bytes": 754
+    },
+    {
+      "path": "results/trajectory_microcase/distributed_protocol_records.csv",
+      "rows": 5544,
+      "sha256": "4c2a95a0e6610fc20a2a26ee6a36d0e3da594827e87387bca55e9ad48e56f0ae",
+      "size_bytes": 779294
+    },
+    {
+      "path": "results/trajectory_microcase/distributed_reproducibility_audit.json",
+      "sha256": "8847cdbafb150cefdad0496ac9a2a73a6ccee34f96c977431cf6b69d0dabb242",
+      "size_bytes": 4993
+    },
+    {
+      "path": "results/trajectory_microcase/episode_records.csv",
+      "rows": 2880,
+      "sha256": "fd953e541ae54c428096ffbbfd6a71d32bcaf724ee93459418cc0a0394be7b16",
+      "size_bytes": 1520237
+    },
+    {
+      "path": "results/trajectory_microcase/feedback_flood_records.csv",
+      "rows": 2880,
+      "sha256": "e2f5567f6a6a539981c62b47ee633ba474583532cce86bf9a0d6656ac578d628",
+      "size_bytes": 156911
+    },
+    {
+      "path": "results/trajectory_microcase/figure_data/trajectory_running.csv",
+      "rows": 240,
+      "sha256": "b00c8898e8ac95d0bcc2db9bb1af3788720f0e332b9d8d66777ea1f1f816cdbd",
+      "size_bytes": 52621
+    },
+    {
+      "path": "results/trajectory_microcase/model_closure_audit.json",
+      "sha256": "b1ce4ce4e2b7a9dc9a024bc1b6a206d357a75b07de1754ad6f4e8582195f82d5",
+      "size_bytes": 3229
+    },
+    {
+      "path": "results/trajectory_microcase/score_crossing_witness.csv",
+      "rows": 2,
+      "sha256": "12e848127e59da044c7260639e571fe2f3f9372182bc2bc7a93f91c6c0bc8c1f",
+      "size_bytes": 652
+    },
+    {
+      "path": "results/trajectory_microcase/statistical_diagnostic_audit.json",
+      "sha256": "e26c6d129ea3f4a9e227549cab286067776621cfd4abf83dc928b9555971c704",
+      "size_bytes": 8010
+    },
+    {
+      "path": "results/trajectory_microcase/summary.json",
+      "sha256": "51e8e20b2e68a71a42b05a46d203c1cede29dfea69fa7c589daa609af4e0ac99",
+      "size_bytes": 10997
+    },
+    {
+      "path": "results/trajectory_microcase/trial_summary.csv",
+      "rows": 12,
+      "sha256": "6188e4a675d89c3f30c6df28a20f9313689ad29398d97951c420177cadfdb8df",
+      "size_bytes": 5086
+    },
+    {
+      "path": "run_all.sh",
+      "sha256": "d4475cb880e1a77a8874b7ba3c11268c6850618d310a8b4375e02ea50bd4578a",
+      "size_bytes": 1321
+    },
+    {
+      "path": "run_quick.sh",
+      "sha256": "963d4a8354ab0a0d366c03bd547c634e3cdbb9017042d2a484009db913d1704b",
+      "size_bytes": 1359
+    },
+    {
+      "path": "scripts/audit_projected_estimator_constraints.py",
+      "sha256": "7f358da58b65d9628178027099d1853761bf2b5d28afa62a08bf439f795cc0ba",
+      "size_bytes": 9726
+    },
+    {
+      "path": "scripts/build_application_evidence.py",
+      "sha256": "3860b0137528fff003a103bb3525825702a14f4a3869172e73787b3f77f9d7bc",
+      "size_bytes": 20445
+    },
+    {
+      "path": "scripts/build_control_evidence.py",
+      "sha256": "091ce1c8cde2b85c0428a329dc3bcbc90a21abbf0569f693f2c4dabbed01fcbc",
+      "size_bytes": 12100
+    },
+    {
+      "path": "scripts/build_exact_oracle_audit.py",
+      "sha256": "7248208139e44fe975807f5284666eb57257fd83f95afda4dda0844d26a9f74a",
+      "size_bytes": 13884
+    },
+    {
+      "path": "scripts/build_statistical_diagnostics.py",
+      "sha256": "46e30dad704ee6a06584537e64fbd8f514c1cdf75847dc5aa80428cdec714c41",
+      "size_bytes": 25723
+    },
+    {
+      "path": "scripts/build_trajectory_figure_data.py",
+      "sha256": "57c40b93df1ece02b262ba5ce8c3d246f5b3251655a3ace6c6b20f62a4eae750",
+      "size_bytes": 1907
+    },
+    {
+      "path": "scripts/build_trajectory_protocol_assets.py",
+      "sha256": "97ea6877ff7bc229a5cf2ab0011d4b2ac11975f85a0f203b70ee55429680cbeb",
+      "size_bytes": 940
+    },
+    {
+      "path": "scripts/check_environment.py",
+      "sha256": "56e608035a775c97020175d06a10427228a3565304c58093d9bfd63e6dfe9944",
+      "size_bytes": 971
+    },
+    {
+      "path": "scripts/refresh_integrity_metadata.py",
+      "sha256": "bb63d737d84238b39c583fbe1956c230520bb5d83d3e753b827334ded84d4cf6",
+      "size_bytes": 3451
+    },
+    {
+      "path": "scripts/run_baselines.py",
+      "sha256": "596271928b0fbe0ee50f2452ba26948eb675a5ea14b1b7ee092db09f0e34c902",
+      "size_bytes": 7422
+    },
+    {
+      "path": "scripts/run_exploration.py",
+      "sha256": "7a314f95034c40bbe8e3d9b0313472885f24e1cfade4352797383b1b551e231b",
+      "size_bytes": 9091
+    },
+    {
+      "path": "scripts/run_trajectory_microcase.py",
+      "sha256": "3015aa3e0f2319e1d36063f8531097a3c92b9d7937092816374e54bbc4b75983",
+      "size_bytes": 365
+    },
+    {
+      "path": "scripts/summarize_results.py",
+      "sha256": "9f4a53ce9461648ffb8580fcc6b437caa5877fb6982665af5dfd51144c486e9f",
+      "size_bytes": 14855
+    },
+    {
+      "path": "scripts/validate_results.py",
+      "sha256": "2a2d127e0e07f475b229786b6da9ed9aa9d049bcdb995a0078b7f9e588441c99",
+      "size_bytes": 21565
+    },
+    {
+      "path": "scripts/verify_control_evidence.py",
+      "sha256": "5d8844f72efabaa31af17ccc96b8f60f09f3978f1f2b27ce51a47d544f2b99aa",
+      "size_bytes": 10543
+    },
+    {
+      "path": "scripts/verify_exact_oracle_audit.py",
+      "sha256": "2300729f96d996f888eff446feb1aa7dd33b13e22b6e85650b2db32d029ab8f3",
+      "size_bytes": 3592
+    },
+    {
+      "path": "scripts/verify_package_integrity.py",
+      "sha256": "05303e3392da9bda4242e26626924ff044f89bd8a6f61d2a16e8f60403784513",
+      "size_bytes": 2762
+    },
+    {
+      "path": "scripts/verify_projected_estimator_audit.py",
+      "sha256": "a6bd4d3d6530c80ec867ed88c71d1287b263cbef9a98943d2971c3fe881ee06f",
+      "size_bytes": 7081
+    },
+    {
+      "path": "scripts/verify_reference_results.py",
+      "sha256": "784b6630bf0d0b0f19cb25591dc7d1c893e631eac177b3fa2ff369a3533a8781",
+      "size_bytes": 3042
+    },
+    {
+      "path": "scripts/verify_trajectory_microcase.py",
+      "sha256": "04dd1521b5348e516a66d4a279a696c5f4ea9b285a4a6a7a72ebcde58cd7ce3c",
+      "size_bytes": 20405
+    },
+    {
+      "path": "seeds/codebook_satellite.csv",
+      "rows": 30,
+      "sha256": "9c96ce5716560405290f39e009570b54338d4e705f4d3c4a29242c3344f209be",
+      "size_bytes": 4232
+    },
+    {
+      "path": "seeds/codebook_uav.csv",
+      "rows": 40,
+      "sha256": "156a7dd2bc79b9c8ae55a875fac6b3fcacd3c3b2b65e7a7180acdb4f8e15ddb9",
+      "size_bytes": 7006
+    },
+    {
+      "path": "seeds/trajectory_microcase_codebook.csv",
+      "rows": 60,
+      "sha256": "d62d359b8d1db1b2cc29fbd161824406e94d4c1fa4d633bcb6f35594dedd13b4",
+      "size_bytes": 1847
+    },
+    {
+      "path": "seeds/trajectory_microcase_exploration_schedule.csv",
+      "rows": 18,
+      "sha256": "ad9a5826e57055823007beb2723e9e6378768bdfc2b0c95c05a085f58a449ebf",
+      "size_bytes": 416
+    },
+    {
+      "path": "seeds/trajectory_microcase_seeds.csv",
+      "rows": 12,
+      "sha256": "7a38a38e8c9fa190c574d2ff4095485576cbe02039fc2d30608322a30a18300a",
+      "size_bytes": 252
+    },
+    {
+      "path": "seeds/trials.csv",
+      "rows": 72,
+      "sha256": "47a5e237f30ea7e82125d13a899ffba30b2c45eee67e2b5388f939e78c1d4220",
+      "size_bytes": 9452
+    },
+    {
+      "path": "src/campaign_engine.py",
+      "sha256": "31b4c0df0a95a69e7b718070919c9bf0398fa8387b935e904e29273b6d9ec671",
+      "size_bytes": 43556
+    },
+    {
+      "path": "src/certificate_arithmetic.py",
+      "sha256": "7ddaf1c235044c8134bc15d43d4ae311ba1ac6a39e58652da1aeb8bc7921ea27",
+      "size_bytes": 14095
+    },
+    {
+      "path": "src/exploration.py",
+      "sha256": "dfbeaf25d04f803bcfca7b97f7300f48b707a6f9978cd950602629bae6425ad2",
+      "size_bytes": 687
+    },
+    {
+      "path": "src/exploration_campaign.py",
+      "sha256": "7c97b47c5b1bb137706b1d7105ca4393a5b7ed861561fe3d7488996dc52801d9",
+      "size_bytes": 45938
+    },
+    {
+      "path": "src/reference_reset.py",
+      "sha256": "ee7fe354984afbd4e12f86e40c19a2cea45a5c71043cc4978cfc51a192236a4d",
+      "size_bytes": 13536
+    },
+    {
+      "path": "src/return_model_scope.py",
+      "sha256": "02ca04f4abc1fbf3203abfaa0fbe2e90c9c14cbe430693ddedf8da4bc759cd90",
+      "size_bytes": 5480
+    },
+    {
+      "path": "src/tracking_models.py",
+      "sha256": "4d4ae6d94d64a74fee86566fee1d5408f7668e3eb1fe3aa9ee8025bc52b2af84",
+      "size_bytes": 22048
+    },
+    {
+      "path": "src/trajectory_microcase.py",
+      "sha256": "26b0847c5e86a1209475959a95f0d48f9b13c1634ea09c6d6c37e63f69e4e3aa",
+      "size_bytes": 110482
+    },
+    {
+      "path": "tests/test_control_interfaces.py",
+      "sha256": "b1fb99c9f8d61f9c74c66816239c2d1842d2e4928e01424914e3d86696c3371d",
+      "size_bytes": 4773
+    },
+    {
+      "path": "tests/test_csv_serialization.py",
+      "sha256": "3d1fed34c648af93378b5b3f56ab83dd5e4662bcc5913da6434dc260c7a53b4a",
+      "size_bytes": 2293
+    },
+    {
+      "path": "tests/test_projected_estimator.py",
+      "sha256": "bf1ba063ef690e2b1deb67d2970b66039e49b97d1fb7a7b5b2b61785e8772a57",
+      "size_bytes": 2499
+    },
+    {
+      "path": "tests/test_return_model_scope.py",
+      "sha256": "1308f50ee973649bafa9267deb7e36bda34bc6a375c47cecc3814b528e1e6a2f",
+      "size_bytes": 2275
+    },
+    {
+      "path": "tests/test_smoke.py",
+      "sha256": "9d542c874297b1e302876d5f565eb2cd41bc3a59337d888ebd072fc24d8e74cc",
+      "size_bytes": 14422
+    },
+    {
+      "path": "tests/test_statistical_diagnostics.py",
+      "sha256": "22cd2b441a5c2a8b1e8e01c3afa7d68c53a82a534ee8a1b6bc5565a695dad38e",
+      "size_bytes": 8725
+    },
+    {
+      "path": "tests/test_trajectory_microcase.py",
+      "sha256": "6902375decea26f66fb53977cf96356df6a3932a4ab65c2e37749b967adb7ebd",
+      "size_bytes": 21206
+    }
+  ],
+  "package_name": "Distributed Task Allocation Simulations",
+  "package_version": "2.0.0",
+  "schema_version": "simulation-package-manifest-v1",
+  "scope": "Synthetic data, simulation code, numerical records, and executable verification."
+}

@@ -1,0 +1,3 @@
+No open-source license has been selected for this repository.
+Copyright is retained by the rights holders. Permission is required before reuse,
+redistribution, or incorporation into another software package.
