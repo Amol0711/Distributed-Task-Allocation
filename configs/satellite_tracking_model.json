@@ -1,0 +1,70 @@
+{
+  "application": "micro_satellite_attitude_tracking",
+  "sample_time": 0.25,
+  "horizon": 16,
+  "axis_input_gains": [
+    0.85,
+    1.0,
+    1.15
+  ],
+  "lambda_slack_fraction": 0.25,
+  "mu_slack_fraction": 0.2,
+  "disturbance_bound": 0.01,
+  "jump_bound": 0.03,
+  "initial_error_bound": 0.05,
+  "normalized_validity_radius": 0.45,
+  "normalized_control_limit": 2.0,
+  "fallback_probability_diagnostic": 0.25,
+  "diagnostic_epochs": 160,
+  "diagnostic_seed": 120260809,
+  "dwell_sweep_max_horizon": 28,
+  "normalization": {
+    "angle_scale_rad": 0.08,
+    "angular_rate_scale_rad_per_s": 0.02,
+    "torque_scale_Nm": 0.004,
+    "interpretation": "The six-state error stacks normalized small-angle and angular-rate errors on three principal axes."
+  },
+  "fallback_policy": "Abort the observation product, hold the current command attitude, and retain the same stabilizing feedback template. Mission benefit is zero after intervention; the tracking matrix and Lyapunov function do not switch within the episode.",
+  "controller_templates": {
+    "idle_hold": {
+      "lqr_state_weight_axis": [
+        6.0,
+        1.0
+      ],
+      "lqr_input_weight": 1.8,
+      "assignment_rule": "unassigned or station-keeping product"
+    },
+    "survey": {
+      "lqr_state_weight_axis": [
+        10.0,
+        1.8
+      ],
+      "lqr_input_weight": 1.2,
+      "assignment_rule": "normalized slew demand <= 0.35"
+    },
+    "responsive": {
+      "lqr_state_weight_axis": [
+        16.0,
+        2.8
+      ],
+      "lqr_input_weight": 0.8,
+      "assignment_rule": "0.35 < normalized slew demand <= 0.65"
+    },
+    "agile": {
+      "lqr_state_weight_axis": [
+        24.0,
+        4.0
+      ],
+      "lqr_input_weight": 0.6,
+      "assignment_rule": "normalized slew demand > 0.65"
+    }
+  },
+  "state_weight_axis": [
+    1.0,
+    0.35
+  ],
+  "numerical_padding": {
+    "absolute": 1e-08,
+    "relative": 1e-06
+  }
+}

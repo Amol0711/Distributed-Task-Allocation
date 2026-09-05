@@ -1,0 +1,146 @@
+{
+  "campaign_id": "UAV-AG-V1",
+  "application": "precision_agriculture_uav_tracking",
+  "data_status": "fully synthetic and deterministically generated from the included configuration and seed registry",
+  "primary": {
+    "agents": 10,
+    "tasks": 48,
+    "basis_dimension": 8,
+    "epochs": 500,
+    "evaluation_trials": 32,
+    "design_trials": 4,
+    "discount": 0.995,
+    "feedback_noise_sigma": 0.05,
+    "confidence_delta": 0.05,
+    "ridge_regularization": 1.0,
+    "score_quantization_bits": 20,
+    "graph": "connected_random_geometric",
+    "graph_radius": 0.55,
+    "allocation_layers": [
+      "one_cell_per_uav",
+      "cell_visit_capacity",
+      "field_zone_quota"
+    ],
+    "q": 3,
+    "zone_capacities": [
+      3,
+      3,
+      2,
+      2
+    ],
+    "resource_components": [
+      "battery",
+      "sensor_or_treatment_payload"
+    ],
+    "resource_initial": [
+      1.0,
+      1.0
+    ],
+    "resource_replenishment_per_epoch": [
+      0.022,
+      0.01
+    ],
+    "theta_star": [
+      0.86,
+      0.8,
+      0.73,
+      0.66,
+      0.58,
+      0.5,
+      0.43,
+      0.35
+    ]
+  },
+  "small_exact_oracle": {
+    "agents": 5,
+    "tasks": 10,
+    "basis_dimension": 8,
+    "epochs": 160,
+    "evaluation_trials": 32,
+    "maximum_enumerated_feasible_sets": 250000
+  },
+  "generator": {
+    "field_grid_shape": [
+      8,
+      6
+    ],
+    "field_size_m": [
+      400.0,
+      300.0
+    ],
+    "feature_kernel_count": 3,
+    "wind_ar_coefficient": 0.75,
+    "wind_innovation_std_m_per_s": 0.8,
+    "transit_decay_scale_m": 140.0,
+    "minimum_coverage_probability": 0.01,
+    "maximum_coverage_probability": 0.98,
+    "energy_cost_range": [
+      0.02,
+      0.12
+    ],
+    "payload_cost_range": [
+      0.01,
+      0.08
+    ]
+  },
+  "stress_grid": {
+    "feedback_noise_sigma": [
+      0.025,
+      0.05,
+      0.1,
+      0.15
+    ],
+    "resource_tightness_multiplier": [
+      0.65,
+      0.8,
+      1.0,
+      1.2
+    ],
+    "graph_family": [
+      "path",
+      "ring",
+      "connected_random_geometric",
+      "complete"
+    ],
+    "score_quantization_bits": [
+      8,
+      12,
+      16,
+      20
+    ],
+    "disturbance_multiplier": [
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "jump_multiplier": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "zone_layer_active": [
+      false,
+      true
+    ]
+  },
+  "controller_template_map": {
+    "loiter": [
+      0.0,
+      0.0
+    ],
+    "mapping": [
+      0.0,
+      0.35
+    ],
+    "scouting": [
+      0.35,
+      0.65
+    ],
+    "urgent_inspection": [
+      0.65,
+      1.0
+    ]
+  },
+  "tracking_model_config": "configs/uav_tracking_model.json"
+}

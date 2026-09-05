@@ -1,0 +1,86 @@
+{
+  "campaign_id": "TRAJ-MICRO-V1",
+  "agents": 3,
+  "tasks": 5,
+  "feature_dimension": 6,
+  "feature_saturation_cap": 1.0,
+  "q_extendibility": 2,
+  "terminal_assignment_cardinality": 3,
+  "fallback_value": 0.0,
+  "fallback_mode": 0,
+  "fallback_reference": [0.0, 0.0],
+  "physical_blocks": 1,
+  "physical_state_dimension": 2,
+  "episodes": 240,
+  "physical_horizon": 8,
+  "exploration_episodes": 18,
+  "discount_factor": 0.94,
+  "fmax": 1.2,
+  "btheta": 0.55,
+  "ridge_lambda": 0.25,
+  "confidence_delta": 0.05,
+  "theta_star": [0.28, 0.24, 0.21, 0.18, 0.16, 0.13],
+  "disturbance_bound": 0.0032,
+  "trajectory_return_vector": [0.95, -0.65],
+  "initial_tracking_error": [0.06, -0.045],
+  "mu": 1.1,
+  "lambda_c_margin": 0.045,
+  "actuator_gain": 0.75,
+  "actuator_margin_factor": 1.05,
+  "validity_margin_factor": 1.08,
+  "controller_templates": [
+    [[0.60, 0.05], [-0.02, 0.56]],
+    [[0.66, 0.02], [0.01, 0.55]],
+    [[0.57, -0.04], [0.03, 0.69]],
+    [[0.63, 0.03], [-0.02, 0.64]]
+  ],
+  "disturbance_input_templates": [
+    [[1.0, 0.0], [0.0, 1.0]],
+    [[1.0, 0.0], [0.0, 1.0]],
+    [[1.0, 0.0], [0.0, 1.0]],
+    [[1.0, 0.0], [0.0, 1.0]]
+  ],
+  "evaluation_seeds": [12031, 12037, 12041, 12043, 12049, 12071, 12073, 12097, 12101, 12107, 12109, 12113],
+  "allocation_network": {
+    "nodes": 3,
+    "undirected_edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "diameter": 2,
+    "diameter_upper_bound": 2,
+    "rounds_per_stage": 2,
+    "feedback_source_agent": 0,
+    "ownership_rule": "edge_owned_by_first_coordinate",
+    "identifier_order": "owner_major_task_minor",
+    "score_encoding": "identity",
+    "encoding_error": 0.0,
+    "required_message_tags": [
+      "episode",
+      "stage",
+      "partial_set",
+      "score_scale"
+    ]
+  },
+  "exploration_codebook": {
+    "family": "lexicographic_terminal_matchings",
+    "size": 60,
+    "schedule_multiplier": 7,
+    "schedule_offset": 3,
+    "schedule_index_base": 0,
+    "public_assignment_dispatch": true
+  },
+  "resource_screen": {
+    "mode": "vacuous_owner_supported_zero_cost",
+    "resource_dimension_per_owner": 1,
+    "initial_balance_per_owner": 1.0,
+    "robust_edge_cost": 0.0,
+    "episode_replenishment_per_owner": 0.0
+  }
+}

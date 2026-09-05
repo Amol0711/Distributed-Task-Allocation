@@ -1,0 +1,139 @@
+{
+  "campaign_id": "SAT-COV-V1",
+  "application": "micro_satellite_attitude_tracking",
+  "data_status": "fully synthetic and deterministically generated from the included configuration and seed registry",
+  "primary": {
+    "agents": 8,
+    "tasks": 24,
+    "basis_dimension": 6,
+    "epochs": 480,
+    "evaluation_trials": 32,
+    "design_trials": 4,
+    "discount": 0.995,
+    "feedback_noise_sigma": 0.04,
+    "confidence_delta": 0.05,
+    "ridge_regularization": 1.0,
+    "score_quantization_bits": 20,
+    "graph": "connected_random_geometric",
+    "graph_radius": 0.62,
+    "allocation_layers": [
+      "one_task_per_satellite",
+      "one_satellite_per_target",
+      "spectral_channel_quota"
+    ],
+    "q": 3,
+    "channel_capacities": [
+      3,
+      3,
+      2
+    ],
+    "resource_components": [
+      "reaction_wheel_energy",
+      "onboard_data"
+    ],
+    "resource_initial": [
+      1.0,
+      1.0
+    ],
+    "resource_replenishment_per_epoch": [
+      0.018,
+      0.012
+    ],
+    "theta_star": [
+      0.9,
+      0.82,
+      0.74,
+      0.63,
+      0.52,
+      0.41
+    ]
+  },
+  "small_exact_oracle": {
+    "agents": 5,
+    "tasks": 8,
+    "basis_dimension": 6,
+    "epochs": 160,
+    "evaluation_trials": 32,
+    "maximum_enumerated_feasible_sets": 200000
+  },
+  "generator": {
+    "target_latitude_range_deg": [
+      -55.0,
+      55.0
+    ],
+    "visibility_threshold": 0.2,
+    "cloud_ar_coefficient": 0.82,
+    "cloud_innovation_std": 0.12,
+    "slew_decay_scale": 0.55,
+    "minimum_coverage_probability": 0.01,
+    "maximum_coverage_probability": 0.98,
+    "energy_cost_range": [
+      0.025,
+      0.11
+    ],
+    "data_cost_range": [
+      0.018,
+      0.09
+    ]
+  },
+  "stress_grid": {
+    "feedback_noise_sigma": [
+      0.02,
+      0.04,
+      0.08,
+      0.12
+    ],
+    "resource_tightness_multiplier": [
+      0.65,
+      0.8,
+      1.0,
+      1.2
+    ],
+    "graph_family": [
+      "path",
+      "ring",
+      "connected_random_geometric",
+      "complete"
+    ],
+    "score_quantization_bits": [
+      8,
+      12,
+      16,
+      20
+    ],
+    "disturbance_multiplier": [
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "jump_multiplier": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "channel_layer_active": [
+      false,
+      true
+    ]
+  },
+  "controller_template_map": {
+    "idle_hold": [
+      0.0,
+      0.0
+    ],
+    "survey": [
+      0.0,
+      0.35
+    ],
+    "responsive": [
+      0.35,
+      0.65
+    ],
+    "agile": [
+      0.65,
+      1.0
+    ]
+  },
+  "tracking_model_config": "configs/satellite_tracking_model.json"
+}

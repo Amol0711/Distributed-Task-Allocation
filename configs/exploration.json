@@ -1,0 +1,62 @@
+{
+  "software_version": "1.1.0",
+  "experiment_id": "public-codebook-exploration",
+  "applications": [
+    {
+      "campaign_id": "SAT-COV-V1",
+      "config": "configs/satellite_campaign.json",
+      "dimension": 6,
+      "epochs": 480,
+      "codebook_file": "seeds/codebook_satellite.csv"
+    },
+    {
+      "campaign_id": "UAV-AG-V1",
+      "config": "configs/uav_campaign.json",
+      "dimension": 8,
+      "epochs": 500,
+      "codebook_file": "seeds/codebook_uav.csv"
+    }
+  ],
+  "c_exp_grid": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "schedule": {
+    "formula": "p_k=min(1,c_exp*k^(-1/3))",
+    "epoch_indexing": "k=1,...,K"
+  },
+  "common_random_numbers": {
+    "exploration_uniform_domain_tag": "exploration-uniform-v1",
+    "codebook_index_domain_tag": "codebook-index-v1",
+    "draw_arrays_materialized_before_branching": true,
+    "same_arrays_across_c_exp": true
+  },
+  "codebook": {
+    "seed": 123,
+    "directions_per_dimension": 4,
+    "dirichlet_alpha": 0.2,
+    "distribution": "uniform",
+    "basis_directions_included": true,
+    "size_rule": "5*d"
+  },
+  "covariance_audit_fractions": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "certificate_arithmetic": {
+    "schema": "exploration-campaign-v2",
+    "episode_cap": "F_max/q",
+    "exploitation_clip": "min(raw finite-channel charge,F_max/q)",
+    "universal_normalization": "q*B_K/(K*F_max)",
+    "fixed_trace_routes": [
+      "support-derived",
+      "prior-only"
+    ],
+    "selection_policy_unchanged": true
+  }
+}

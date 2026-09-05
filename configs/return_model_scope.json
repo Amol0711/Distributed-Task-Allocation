@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "target_execution_route": "direct_operational",
+  "routes": {
+    "direct_operational": {
+      "status": "operational",
+      "description": "Predeclared aggregate full-bandit return with the direct configured confidence scale."
+    },
+    "support_fixed_trace": {
+      "status": "fixed_trace_recertification",
+      "description": "Support-derived scale replayed on the recorded target trace; it is not a counterfactual policy execution."
+    },
+    "prior_fixed_trace": {
+      "status": "fixed_trace_recertification",
+      "description": "Enlarged-prior scale replayed on the recorded target trace; it is not a counterfactual policy execution."
+    },
+    "trajectory_interface_only": {
+      "status": "inactive_trajectory_interface",
+      "description": "Shared-reset trajectory-deviation calibration is mathematically available but is not instantiated by the present campaign."
+    }
+  },
+  "trajectory_return_interface": {
+    "enabled": false,
+    "nominal_return_specification": null,
+    "tracking_to_return_lipschitz_specification": null
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "application": "precision_agriculture_uav_tracking",
+  "sample_time": 0.2,
+  "horizon": 20,
+  "axis_input_gains": [
+    1.0,
+    1.0
+  ],
+  "lambda_slack_fraction": 0.25,
+  "mu_slack_fraction": 0.2,
+  "disturbance_bound": 0.012,
+  "jump_bound": 0.035,
+  "initial_error_bound": 0.06,
+  "normalized_validity_radius": 0.55,
+  "normalized_control_limit": 2.5,
+  "fallback_probability_diagnostic": 0.3,
+  "diagnostic_epochs": 160,
+  "diagnostic_seed": 220260809,
+  "dwell_sweep_max_horizon": 32,
+  "normalization": {
+    "position_scale_m": 5.0,
+    "velocity_scale_m_per_s": 2.0,
+    "acceleration_scale_m_per_s2": 2.0,
+    "interpretation": "The four-state error stacks normalized planar position and velocity errors; altitude is held by an independent stabilizing loop."
+  },
+  "fallback_policy": "Abort sensing or treatment, hold the current waypoint, and retain the same stabilizing feedback template. Mission benefit is zero after intervention; the tracking matrix and Lyapunov function do not switch within the episode.",
+  "controller_templates": {
+    "loiter": {
+      "lqr_state_weight_axis": [
+        5.0,
+        0.8
+      ],
+      "lqr_input_weight": 2.0,
+      "assignment_rule": "unassigned or loiter continuation"
+    },
+    "mapping": {
+      "lqr_state_weight_axis": [
+        8.0,
+        1.2
+      ],
+      "lqr_input_weight": 1.4,
+      "assignment_rule": "normalized transit demand <= 0.35"
+    },
+    "scouting": {
+      "lqr_state_weight_axis": [
+        12.0,
+        1.8
+      ],
+      "lqr_input_weight": 1.0,
+      "assignment_rule": "0.35 < normalized transit demand <= 0.65"
+    },
+    "urgent_inspection": {
+      "lqr_state_weight_axis": [
+        18.0,
+        2.5
+      ],
+      "lqr_input_weight": 0.75,
+      "assignment_rule": "normalized transit demand > 0.65"
+    }
+  },
+  "state_weight_axis": [
+    1.0,
+    0.3
+  ],
+  "numerical_padding": {
+    "absolute": 1e-08,
+    "relative": 1e-06
+  }
+}

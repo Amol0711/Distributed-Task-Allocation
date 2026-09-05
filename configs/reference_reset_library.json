@@ -1,0 +1,44 @@
+{
+  "schema_version": "reference-reset-library-v1",
+  "description": "Finite canonical reference images used to certify assignment-induced tracking-coordinate resets before policy execution.",
+  "applications": {
+    "SAT-COV-V1": {
+      "tracking_model_config": "configs/satellite_tracking_model.json",
+      "campaign_config": "configs/satellite_campaign.json",
+      "reference_direction": [
+        1.0,
+        0.0,
+        -0.6666666666666666,
+        0.0,
+        0.5,
+        0.0
+      ],
+      "mode_levels": {
+        "idle_hold": 0.0,
+        "survey": 0.3333333333333333,
+        "responsive": 0.6666666666666666,
+        "agile": 1.0
+      },
+      "residual_reset_bound": 0.0,
+      "interpretation": "The canonical normalized attitude-reference reset changes only the three angle coordinates. Angular-rate reference components are continuous at episode boundaries."
+    },
+    "UAV-AG-V1": {
+      "tracking_model_config": "configs/uav_tracking_model.json",
+      "campaign_config": "configs/uav_campaign.json",
+      "reference_direction": [
+        1.0,
+        0.0,
+        -0.6,
+        0.0
+      ],
+      "mode_levels": {
+        "loiter": 0.0,
+        "mapping": 0.3333333333333333,
+        "scouting": 0.6666666666666666,
+        "urgent_inspection": 1.0
+      },
+      "residual_reset_bound": 0.0,
+      "interpretation": "The canonical normalized waypoint-reference reset changes only the two planar position coordinates. Velocity reference components are continuous at episode boundaries."
+    }
+  }
+}
