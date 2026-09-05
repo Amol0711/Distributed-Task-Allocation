@@ -1,0 +1,22 @@
+{
+  "campaign_id": "SAT-COV-V1",
+  "epochs": 480,
+  "max_full_l1_violation": 0.0,
+  "max_full_l2_violation": 0.0,
+  "max_full_vs_nonnegative_abs_difference": 0.0,
+  "max_nonnegative_l1": 3.986311901366541,
+  "max_nonnegative_l2": 1.6443589984652363,
+  "methods": [
+    "DISTRIBUTED_UCB",
+    "PROJECTED_MEAN",
+    "UCB_WITHOUT_RESOURCE_FILTER"
+  ],
+  "min_nonnegative_l1_slack": 0.03368809863345845,
+  "min_nonnegative_l2_slack": 0.13302770678491838,
+  "nonnegative_any_activations": 0,
+  "nonnegative_l1_activations": 0,
+  "nonnegative_l2_activations": 0,
+  "trial_index": 19,
+  "trial_seed": 864466825,
+  "updates": 1440
+}

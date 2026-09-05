@@ -1,0 +1,3 @@
+campaign_id,comparison,paired_trials,mean_paired_realized_return_difference,bootstrap_method,bootstrap_replicates,bootstrap_seed,bootstrap_ci_level,bootstrap_ci95_low,bootstrap_ci95_high,mean_paired_true_value_difference
+SAT-COV-V1,exploitation-only UCB minus fixed-H myopic,32,10.121357589651792,paired nonparametric percentile bootstrap of the trial-level mean,100000,20260819,0.94999999999999996,9.0366624251776937,11.229678711554914,10.105403770723184
+UAV-AG-V1,exploitation-only UCB minus fixed-H myopic,32,10.1062500558224,paired nonparametric percentile bootstrap of the trial-level mean,100000,20260820,0.94999999999999996,8.4892827377113154,11.770443646458173,10.200000055822393

@@ -1,0 +1,3 @@
+campaign_id,application,state_dimension,mode_count,pair_count,tracking_config_path,campaign_config_path,assignment_map_verified,reference_diameter,residual_reset_bound,certified_jump_bound,configured_jump_bound,certification_margin,maximizing_pairs,all_pairs_certified
+SAT-COV-V1,micro_satellite_attitude_tracking,6,4,16,configs/satellite_tracking_model.json,configs/satellite_campaign.json,1,0.029999999999999999,0,0.029999999999999999,0.029999999999999999,0,agile->idle_hold|idle_hold->agile,1
+UAV-AG-V1,precision_agriculture_uav_tracking,4,4,16,configs/uav_tracking_model.json,configs/uav_campaign.json,1,0.03500000000000001,0,0.03500000000000001,0.035000000000000003,-6.9388939039072284e-18,loiter->urgent_inspection|urgent_inspection->loiter,1

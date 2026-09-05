@@ -1,0 +1,3 @@
+campaign_id,trials,paired_shielded_to_unshielded_retention_mean,paired_shielded_to_unshielded_retention_se
+SAT-COV-V1,32,0.9980609799238207,0.0012283095127795783
+UAV-AG-V1,32,0.9964346511072375,0.0014589930110019684

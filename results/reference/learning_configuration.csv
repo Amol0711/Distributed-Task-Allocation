@@ -1,0 +1,3 @@
+campaign_id,dimension,horizon_epochs,ridge_lambda,confidence_delta,sigma_y_direct,codebook_M,codebook_probability,codebook_seed,codebook_construction
+SAT-COV-V1,6,480,1.0,0.05,0.04,30,0.03333333333333333,123,[I_d; 4d Dirichlet(0.2) nonnegative directions]
+UAV-AG-V1,8,500,1.0,0.05,0.05,40,0.025,123,[I_d; 4d Dirichlet(0.2) nonnegative directions]

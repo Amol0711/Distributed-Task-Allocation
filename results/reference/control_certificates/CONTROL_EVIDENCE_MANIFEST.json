@@ -1,0 +1,92 @@
+{
+  "applications": 2,
+  "certificate_timing": "pre-execution",
+  "controller_cross_mode_tests": 32,
+  "controller_templates_checked": 8,
+  "controller_within_mode_tests": 8,
+  "files": [
+    {
+      "path": "reference_reset_summary.csv",
+      "sha256": "acb68c0b124c782d95e035fef06886bf068fd7e117fe0f4ea0541f7654b8fb0b",
+      "size_bytes": 749
+    },
+    {
+      "path": "reference_reset_offsets.csv",
+      "sha256": "c9b203cdda7bc3203891c72029a015a056e35537d525955d318ad6b4c782d507",
+      "size_bytes": 703
+    },
+    {
+      "path": "reference_reset_pairs.csv",
+      "sha256": "27817633ece8074d717304824524df528ea0b4e3e3875f9b1a9fcdd9efa9ff07",
+      "size_bytes": 3793
+    },
+    {
+      "path": "controller_template_summary.csv",
+      "sha256": "1e9ecbc07386f06f07d57269579be63d61e4340b2334d43ba179440163855929",
+      "size_bytes": 1525
+    },
+    {
+      "path": "controller_mode_checks.csv",
+      "sha256": "b8e1bde0813e1b8883a2e9ba1ce4470641024514c1ef5df6858a6a3b4736f3a2",
+      "size_bytes": 3837
+    },
+    {
+      "path": "controller_pair_checks.csv",
+      "sha256": "b0d4d1bc47e450186753ed8262d18499471e777459dae2968d6cbc198a0260b8",
+      "size_bytes": 4699
+    }
+  ],
+  "mode_pairs_checked": 32,
+  "policy_trace_used": false,
+  "product_mode_lift": "max-composed Lyapunov function under block-maximum norm",
+  "reference_mode_pairs_checked": 32,
+  "schema": "control-evidence-v2",
+  "source_files": [
+    {
+      "path": "configs/reference_reset_library.json",
+      "sha256": "6b6eb4c96e9517f9192756a77ac6510a64340e5ce6e52a1310bee501f9e4724c",
+      "size_bytes": 1528
+    },
+    {
+      "path": "configs/satellite_campaign.json",
+      "sha256": "4437ee8847efe54a8f6e38d8bfc8c148dabd124db50f5aa04d5740b47105ee28",
+      "size_bytes": 2580
+    },
+    {
+      "path": "configs/satellite_tracking_model.json",
+      "sha256": "b21b1a85ba599b167b6b1794174cc98ce94c4ed8dc7c0813225abc08287c7135",
+      "size_bytes": 1910
+    },
+    {
+      "path": "configs/uav_campaign.json",
+      "sha256": "26b7eb119607235ee62e42f9869786d4d9142966fc5b156bb7a241ac48518e13",
+      "size_bytes": 2641
+    },
+    {
+      "path": "configs/uav_tracking_model.json",
+      "sha256": "b88a3c54b9916959c1dfbc4ecfdc5edce855b8e8bea4379338f7da6113c51f12",
+      "size_bytes": 1934
+    },
+    {
+      "path": "scripts/build_control_evidence.py",
+      "sha256": "091ce1c8cde2b85c0428a329dc3bcbc90a21abbf0569f693f2c4dabbed01fcbc",
+      "size_bytes": 12100
+    },
+    {
+      "path": "src/campaign_engine.py",
+      "sha256": "31b4c0df0a95a69e7b718070919c9bf0398fa8387b935e904e29273b6d9ec671",
+      "size_bytes": 43556
+    },
+    {
+      "path": "src/reference_reset.py",
+      "sha256": "ee7fe354984afbd4e12f86e40c19a2cea45a5c71043cc4978cfc51a192236a4d",
+      "size_bytes": 13536
+    },
+    {
+      "path": "src/tracking_models.py",
+      "sha256": "4d4ae6d94d64a74fee86566fee1d5408f7668e3eb1fe3aa9ee8025bc52b2af84",
+      "size_bytes": 22048
+    }
+  ],
+  "status": "PASS"
+}

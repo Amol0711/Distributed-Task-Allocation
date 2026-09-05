@@ -1,0 +1,22 @@
+{
+  "campaign_id": "UAV-AG-V1",
+  "epochs": 500,
+  "max_full_l1_violation": 0.0,
+  "max_full_l2_violation": 0.0,
+  "max_full_vs_nonnegative_abs_difference": 0.0,
+  "max_nonnegative_l1": 4.865951830011165,
+  "max_nonnegative_l2": 1.753039144734648,
+  "methods": [
+    "DISTRIBUTED_UCB",
+    "PROJECTED_MEAN",
+    "UCB_WITHOUT_RESOURCE_FILTER"
+  ],
+  "min_nonnegative_l1_slack": 0.04404816998883554,
+  "min_nonnegative_l2_slack": 0.13751494071226134,
+  "nonnegative_any_activations": 0,
+  "nonnegative_l1_activations": 0,
+  "nonnegative_l2_activations": 0,
+  "trial_index": 3,
+  "trial_seed": 284347057,
+  "updates": 1500
+}

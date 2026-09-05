@@ -1,0 +1,59 @@
+{
+  "all_exact_optimum_crosschecks_passed": true,
+  "all_feasibility_and_maximality_checks_passed": true,
+  "all_finite_channel_checks_passed": true,
+  "campaigns": [
+    {
+      "all_checks_passed": true,
+      "campaign_id": "SAT-COV-V1",
+      "design_trial_index": 1,
+      "enumerated_feasible_sets_max": 3639,
+      "enumerated_feasible_sets_min": 25,
+      "enumerated_feasible_sets_total": 122873,
+      "instances": 160,
+      "maximum_curvature": 0.8068211317169888,
+      "minimum_exact_score_greedy_ratio": 0.8068750102278038,
+      "minimum_nonuniform_channel_certificate_slack": 0.1384062464101633,
+      "minimum_zero_shortfall_certificate_slack": 0.12570687947579268,
+      "scenario_seed": 4152013627,
+      "screened_elements_max": 27,
+      "screened_elements_min": 7
+    },
+    {
+      "all_checks_passed": true,
+      "campaign_id": "UAV-AG-V1",
+      "design_trial_index": 1,
+      "enumerated_feasible_sets_max": 9966,
+      "enumerated_feasible_sets_min": 73,
+      "enumerated_feasible_sets_total": 651015,
+      "instances": 160,
+      "maximum_curvature": 0.9738593677755374,
+      "minimum_exact_score_greedy_ratio": 0.9325892433392613,
+      "minimum_nonuniform_channel_certificate_slack": 1.3986689883613626,
+      "minimum_zero_shortfall_certificate_slack": 1.2671622517186183,
+      "scenario_seed": 3113000784,
+      "screened_elements_max": 35,
+      "screened_elements_min": 12
+    }
+  ],
+  "enumerated_feasible_sets_total": 773888,
+  "inputs": {
+    "builder_sha256": "7248208139e44fe975807f5284666eb57257fd83f95afda4dda0844d26a9f74a",
+    "engine_sha256": "31b4c0df0a95a69e7b718070919c9bf0398fa8387b935e904e29273b6d9ec671",
+    "satellite_config_sha256": "4437ee8847efe54a8f6e38d8bfc8c148dabd124db50f5aa04d5740b47105ee28",
+    "trials_sha256": "47a5e237f30ea7e82125d13a899ffba30b2c45eee67e2b5388f939e78c1d4220",
+    "uav_config_sha256": "26b7eb119607235ee62e42f9869786d4d9142966fc5b156bb7a241ac48518e13"
+  },
+  "instances_total": 320,
+  "minimum_nonuniform_channel_certificate_slack": 0.1384062464101633,
+  "minimum_zero_shortfall_certificate_slack": 0.12570687947579268,
+  "outputs": {
+    "exact_oracle_instances.csv": {
+      "rows": 320,
+      "sha256": "9ce3b9d40fd4514c5fc5eeaeb6c605455ca66d70c38fccddf3c38541b3f6f53e"
+    }
+  },
+  "schema_version": "exact-oracle-audit-v1",
+  "scope": "small exact-oracle geometry audit; no learning updates or physical trajectory simulation",
+  "status": "PASS"
+}

@@ -1,0 +1,7 @@
+campaign_id,consensus_radius,normalized_consensus_radius,contexts,mean_truncated_to_optimum_ratio,feasibility_failures,full_consensus_mismatches
+SAT-COV-V1,0,0.0,48,0.9437130339803129,0,0
+SAT-COV-V1,2,0.5,48,0.9949890337086402,0,0
+SAT-COV-V1,4,1.0,48,0.9949890337086402,0,0
+UAV-AG-V1,0,0.0,48,0.9886444977715224,0,0
+UAV-AG-V1,2,0.5,48,0.9952804919807714,0,0
+UAV-AG-V1,4,1.0,48,0.9938991319656694,0,0
